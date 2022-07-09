@@ -1,0 +1,72 @@
+/*Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+/*font-family: 'Raleway', sans-serif;*/
+
+/*Roboto-Serifa*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+
+/*font-family: 'Roboto Serif', serif;*/
+
+:root{
+	--dark-color:#231F20;
+	--white-color:#FFFFFF;
+	--blue-color:rgb(0,159,227);
+	--orange-color:rgb(255,130,13);
+	--gray-color:#808191;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center .stars{
+  height: 10px;
+  width: 10px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.stars input{
+  display: none;
+}
+.stars label{
+  float: right;
+  font-size: 20px;
+  color: lightgrey;
+  margin: 0 5px;
+  text-shadow: 1px 1px #bbb;
+}
+.stars label:before{
+  content: '★';
+}
+.stars input:checked ~ label{
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.stars:not(:checked) > label:hover,
+.stars:not(:checked) > label:hover ~ label{
+  color: gold;
+}
+.stars input:checked > label:hover,
+.stars input:checked > label:hover ~ label{
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.stars .result:before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 50%;
+  transform: translateX(-47%);
+  bottom: -30px;
+  font-size: 30px;
+  font-weight: 500;
+  color: gold;
+  font-family: 'Poppins', sans-serif;
+  display: none;
+}
+.stars input:checked ~ .result:before{
+  display: block;
+}

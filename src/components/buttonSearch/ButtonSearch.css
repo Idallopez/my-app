@@ -1,0 +1,43 @@
+/*Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+/*font-family: 'Raleway', sans-serif;*/
+
+/*Roboto-Serifa*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+
+/*font-family: 'Roboto Serif', serif;*/
+
+:root{
+	--dark-color:#231F20;
+	--white-color:#FFFFFF;
+	--blue-color:rgb(0,159,227);
+	--orange-color:rgb(255,130,13);
+	--gray-color:#808191;
+}
+
+
+input.src{
+  padding: 9px 10px 9px 32px;
+  outline: none;
+  font-size: 12px;
+  border-radius: 5px;
+  color: #444;
+  border: 1px solid #009fe3;
+  background: #ffff url(../../assets/magnifying-glass-solid.svg) no-repeat 4px;
+  width: 80px;
+  transition: all 5s;
+}
+
+input{
+  margin: 10px;
+
+}
+
+input.src:hover{
+  width: 180px;
+  background-color: #ffff;
+  border-color: #009fe3;
+  box-shadow: 0 0 5px #6dc;
+}
+

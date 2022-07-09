@@ -1,0 +1,140 @@
+/*Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+/*font-family: 'Raleway', sans-serif;*/
+
+/*Roboto-Serifa*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+
+/*font-family: 'Roboto Serif', serif;*/
+
+:root{
+	--dark-color:#231F20;
+	--white-color:#FFFFFF;
+	--blue-color:rgb(0,159,227);
+	--orange-color:rgb(255,130,13);
+	--gray-color:#808191;
+}
+
+body{
+  background-color: rgba(0, 159, 227, 0.4); 
+  font-family: 'Raleway', sans-serif;
+}
+
+/*GRID AREA*/
+
+*{
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  min-height: 100%;
+}
+ h1,h2,h3{
+  font-family: 'Lato', sans-serif;
+  color: var(--purple-color);
+ }
+
+p{
+  color: var(--dark-color);
+  text-align: justify;
+}
+
+/*Estilos Home*/
+
+Header{
+ grid-area: header;
+ background-color: blue;
+}
+Nav{
+  grid-area: navbar;
+  background-color: white;
+}
+Main{
+  grid-area: main;
+  background-color: rgba(0, 159, 227, 0.4); 
+}
+Aside{
+  grid-area: aside;
+  background-color: rgba(0, 159, 227, 0.4); 
+}
+footer{
+  grid-area: footer;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "navbar"
+  "main"
+  "aside"
+  "footer";
+  text-align: center;
+}
+
+/*Resoluciones
+Mobile first
+
+.grid-container{
+  display: grid;
+  grid-template: 
+  "header" 100px
+  "navbar" 50px
+  "main" auto
+  "aside" 100px
+  "footer"; 50px
+  text-align: center;
+}
+*/
+
+.grid-container{
+  display: grid;
+  grid-template: 
+  "header" 100px
+  "navbar" 50px
+  "main" auto
+  "aside" 100px
+  "footer" 50px;
+  text-align: center;
+}
+
+@media screen and (min-width:768px) {
+  .grid-container{
+    grid-template-columns: 200px auto;
+    grid-template-rows: 200px 50px auto 200px;
+    grid-template-areas: 
+    "header header"
+    "navbar navbar"
+    "aside main"
+    "footer footer";
+  }
+}
+@media screen and (min-width:1024px) {
+  .grid-container{
+    grid-template-columns: 200px auto 200px ;
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas: 
+    "navbar header header"
+    "navbar main aside "
+    "footer footer footer";
+  }
+}
+@media screen and (min-width:1200px) {
+  body{
+    background-color: rgba(0, 159, 227, 0.4); 
+  }
+  .grid-container{
+    margin: 0 auto;
+  }
+}

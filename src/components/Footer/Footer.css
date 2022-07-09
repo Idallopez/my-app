@@ -1,0 +1,25 @@
+/*Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+/*font-family: 'Raleway', sans-serif;*/
+
+/*Roboto-Serifa*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+
+/*font-family: 'Roboto Serif', serif;*/
+
+:root{
+	--dark-color:#231F20;
+	--white-color:#FFFFFF;
+	--blue-color:rgb(0,159,227);
+	--orange-color:rgb(255,130,13);
+	--gray-color:#808191;
+}
+
+.footer p{
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    text-align: center;
+}
