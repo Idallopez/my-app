@@ -1,0 +1,88 @@
+/*Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+/*font-family: 'Raleway', sans-serif;*/
+
+/*Roboto-Serifa*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+
+/*font-family: 'Roboto Serif', serif;*/
+
+:root{
+	--dark-color:#231F20;
+	--white-color:#FFFFFF;
+	--blue-color:rgb(0,159,227);
+	--orange-color:rgb(255,130,13);
+	--gray-color:#808191;
+  --grey-dark:#333333;
+}
+
+
+/*LOGO*/
+
+.logoHotelia{
+	width: 110px;
+	margin-top: 10px;
+  margin-left: 5px;
+}
+
+.logoContent{
+  display: flex;
+ flex-direction: row;
+}
+
+/*ASIDE*/
+.AsideItem{
+  color: var(--grey-dark);
+  display: flex;
+flex-direction: row;
+ text-align: center;
+ margin: 5px;
+ font-size: 14px;
+}
+
+.iconSide{
+margin:10px;
+font-size: 20px;
+}
+
+.wordAside{
+  margin:10px;
+}
+
+/*SIDEBAR-PADRE*/
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-height: 90vh;
+  width: 180px;
+  padding: 6px 6px;
+  overflow: hidden;
+}
+.sidebar #btn{
+  position: absolute;
+  left: 90%;
+  top: 6px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(-50%);
+}
+.AsideItem:hover{
+
+  transition: all 0.6s ease;
+  background-color: var(--blue-color);
+
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 2px;
+}
+
+
+
+
+

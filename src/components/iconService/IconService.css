@@ -1,0 +1,62 @@
+/*Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+/*font-family: 'Raleway', sans-serif;*/
+
+/*Roboto-Serifa*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+
+/*font-family: 'Roboto Serif', serif;*/
+
+:root{
+	--dark-color:#231F20;
+	--white-color:#FFFFFF;
+	--blue-color:rgb(0,159,227);
+	--orange-color:rgb(255,130,13);
+	--gray-color:#808191;
+  --blue-dark:#337AB7;
+}
+
+.iconFather{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.iconItem{
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.iconItem1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.iconcard{
+  color: var(--blue-dark);
+  margin: 5px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.numCard{
+  font-size: 30px;
+  padding: 0;
+  margin: 5;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.wordCard{
+  font-size: 25px;
+  padding: 0;
+  margin: 0px;
+  color: var(--orange-color);
+}
